@@ -17,7 +17,7 @@
         h1 {
             text-align: center;
             padding: 20px;
-            font-size: 28px;
+            font-size: 52px;
         }
 
         .form-container {
@@ -106,7 +106,7 @@
         }
 
         /* 使用媒體查詢進行響應式設計 */
-        @media (max-width: 768px) {
+        @media (max-width: 600px) {
             /* 當螢幕寬度小於或等於 768px 時的樣式 */
             .form-container {
                 padding: 10px;
@@ -127,7 +127,7 @@
     </style>
 </head>
 <body>
-    <h1>客户表单系统</h1>
+    <h1>客戶表單系统</h1>
     <div class="form-container">
         <form id="customer-form" onsubmit="return submitForm()">
 
@@ -144,13 +144,13 @@
             <label for="birthday">生日：</label>
             <input type="date" id="birthday" required><br><br>
 
-            <label for="phone">手机：</label>
+            <label for="phone">手機：</label>
             <input type="tel" id="phone" pattern="^\d{10}$" required><br><br>
 
             <label for="email">Email：</label>
             <input type="email" id="email" required><br><br>
 
-            <label for="location">选择縣市：</label>
+            <label for="location">選擇縣市：</label>
             <select id="location" required>
                 <option value="" disabled selected>請選擇縣市</option>
                 <optgroup label="直轄市">
@@ -188,7 +188,7 @@
     </div>
 
     <div id="customer-list">
-        <h2>客户列表</h2>
+        <h2>客戶列表</h2>
         <ul id="list">
             <!-- 这里将动态添加客户列表 -->
         </ul>
