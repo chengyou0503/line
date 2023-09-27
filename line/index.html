@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>客戶表單系統</title>
+</head>
+<body>
+    <h1>客戶表單系統</h1>
+    <div class="form-container">
+        <form id="customer-form">
+            <label for="name">姓名：</label>
+            <input type="text" id="name" required><br><br>
+            
+            <label>性別：</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">男</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">女</label><br><br>
+
+            <label for="birthday">生日：</label>
+            <input type="date" id="birthday" required><br><br>
+
+            <label for="phone">手機：</label>
+            <input type="tel" id="phone" required><br><br>
+
+            <label for="email">Email：</label>
+            <input type="email" id="email" required><br><br>
+
+            <label for="location">住宿地區：</label>
+            <input type="text" id="location" required><br><br>
+
+            <button type="submit">新增客戶</button>
+        </form>
+
+        <div id="customer-list">
+            <h2>客戶列表</h2>
+            <ul id="list"></ul>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
